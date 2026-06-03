@@ -114,20 +114,13 @@ export default function AboutPage() {
               transition={{ duration: 0.9, ease: "easeOut" }}
               className="flex flex-col items-center"
             >
-              <div
-                className="relative w-full max-w-xs flex flex-col items-center justify-center gap-4"
-                style={{ aspectRatio: "3 / 4", borderRadius: "16px", background: "rgb(var(--color-primary-rgb) / 0.06)", border: "2px dashed rgb(var(--color-accent-rgb) / 0.30)" }}
-              >
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-                  <circle cx="40" cy="28" r="20" fill="rgb(var(--color-accent-rgb) / 0.22)" />
-                  <path d="M8 76 Q8 54 40 54 Q72 54 72 76" fill="rgb(var(--color-accent-rgb) / 0.22)" />
-                </svg>
-                <span
-                  className="font-dmsans text-xs tracking-[0.18em] uppercase text-center px-6"
-                  style={{ color: "rgb(var(--color-bg-text-rgb) / 0.35)" }}
-                >
-                  Photo coming soon
-                </span>
+              <div className="relative w-full max-w-xs overflow-hidden" style={{ aspectRatio: "3 / 4", borderRadius: "16px" }}>
+                <Image
+                  src={about.founderImage}
+                  alt={`${about.founderName} — ${about.founderTitle}, ${business.fullName}`}
+                  fill loading="eager" sizes="50vw"
+                  className="object-cover object-top"
+                />
               </div>
               <div className="mt-6 text-center">
                 <p className="font-playfair text-xl" style={{ color: "var(--color-bg-text)" }}>
