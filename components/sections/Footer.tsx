@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { clientConfig } from "@/lib/client.config";
 
 const activeServices = clientConfig.services.filter(s => s.active);
