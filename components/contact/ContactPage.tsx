@@ -312,14 +312,20 @@ export default function ContactPage() {
                   <label style={FIELD_LABEL}>Primary Service Needed *</label>
                   <select name="service" value={form.service} onChange={handleChange} onFocus={() => setFocused('service')} onBlur={() => setFocused(null)} style={selectStyle('service', !!form.service)}>
                     <option value="">Select a service...</option>
-                    <option value="lawn-care">Lawn Care &amp; Maintenance</option>
+                    <option value="patio-installation">Patio Installation</option>
+                    <option value="garden-transformation">Garden Transformation</option>
+                    <option value="back-garden-makeovers">Back Garden Makeover</option>
+                    <option value="driveway-installation">Driveway Installation</option>
+                    <option value="block-paving">Block Paving</option>
+                    <option value="repaving">Repaving</option>
+                    <option value="grids-gravel">Grids &amp; Gravel</option>
+                    <option value="fencing-timber-work">New Fencing</option>
+                    <option value="gazebo-installation">Gazebo Installation</option>
+                    <option value="shed-installation">Shed Installation</option>
+                    <option value="groundworks-excavation">Groundworks &amp; Excavation</option>
+                    <option value="lawn-care-maintenance">Lawn Care &amp; Maintenance</option>
                     <option value="landscape-design">Landscape Design</option>
-                    <option value="irrigation">Irrigation Systems</option>
-                    <option value="hardscaping">Hardscaping &amp; Patios</option>
                     <option value="seasonal-cleanup">Seasonal Cleanup</option>
-                    <option value="tree-shrub-care">Tree &amp; Shrub Care</option>
-                    <option value="mulching">Mulching &amp; Soil Health</option>
-                    <option value="garden-beds">Garden Bed Design</option>
                     <option value="not-sure">Not Sure — Help Me Decide</option>
                   </select>
                   {errors.service && <p style={ERROR_MSG}>{errors.service}</p>}

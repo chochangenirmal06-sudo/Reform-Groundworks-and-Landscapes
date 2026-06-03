@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
             <Icon
               size={48}
               strokeWidth={1.5}
-              style={{ color: "var(--color-accent-dark)", marginBottom: "20px", display: "block" }}
+              style={{ color: "var(--color-accent)", marginBottom: "20px", display: "block" }}
             />
 
             {/* Title */}

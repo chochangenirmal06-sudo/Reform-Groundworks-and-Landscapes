@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { clientConfig } from "@/lib/client.config";
 
 const activeServices = clientConfig.services.filter(s => s.active);
@@ -140,6 +141,15 @@ export default function Footer() {
             </div>
           </div>
 
+        </div>
+      </div>
+
+      {/* Awards strip */}
+      <div style={{ borderTop: "1px solid rgb(var(--color-accent-rgb) / 0.15)" }}>
+        <div className="max-w-7xl mx-auto px-8 py-8 flex items-center justify-center gap-8 sm:gap-14">
+          <div role="img" aria-label="On The Tools Awards 2022 Winner" style={{ width: 52, height: 52, flexShrink: 0, backgroundImage: "url(/images/award1.jpg)", backgroundSize: "auto 52px", backgroundPosition: "left center", backgroundRepeat: "no-repeat", opacity: 0.6 }} />
+          <div role="img" aria-label="London & South East England Prestige Awards 2023/24 Winner" style={{ width: 52, height: 52, flexShrink: 0, backgroundImage: "url(/images/award2.jpg)", backgroundSize: "auto 52px", backgroundPosition: "center center", backgroundRepeat: "no-repeat", opacity: 0.6 }} />
+          <div role="img" aria-label="Three Best Rated 2024 — Landscape Gardeners Ipswich" style={{ width: 52, height: 52, flexShrink: 0, backgroundImage: "url(/images/award3.jpg)", backgroundSize: "auto 52px", backgroundPosition: "right center", backgroundRepeat: "no-repeat", opacity: 0.6 }} />
         </div>
       </div>
 

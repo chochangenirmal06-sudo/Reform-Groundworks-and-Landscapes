@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { clientConfig } from "@/lib/client.config";
 
-const activeServices = clientConfig.services.filter(s => s.active);
+const featuredServices = clientConfig.services.filter(s => s.active && s.featured);
 
 const DEFAULT_IMAGES = [
   "/images/Lawn%20Care%20%26%20Maintenance1.png",
@@ -71,7 +71,7 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ staggerChildren: 0.1 }}
         >
-          {activeServices.map((service, index) => (
+          {featuredServices.map((service, index) => (
             <motion.div
               key={service.name}
               variants={cardVariants}
